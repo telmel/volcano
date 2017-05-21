@@ -1,0 +1,176 @@
+body {
+    background: #000 none repeat scroll 0 0;
+    font: 16px "Trebuchet MS",Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+video {
+    background: rgba(0, 0, 0, 0) url("../img/tw_static_bg.jpg") no-repeat scroll 0 0 / cover ;
+    height: auto;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    z-index: 0;
+}
+.overlay_link {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.wrapper {
+    background: rgba(0, 0, 0, 0.5) url("../img/wrapper_bg.png") repeat scroll 0 0;
+    border-radius: 50%;
+    height: 600px;
+    left: 50%;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 600px;
+    z-index: 5;
+}
+.wrapper .logo {
+    display: block;
+    margin: 10px 0 15px;
+}
+.wrapper h1 {
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    position: relative;
+    text-shadow: -1px 2px #000;
+    text-transform: uppercase;
+}
+.wrapper h1::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 50%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.counter_holder img {
+    color: #fff000;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    vertical-align: middle;
+}
+.counter_holder img:nth-child(3n) {
+    margin-right: 15px;
+}
+.play_btn {
+    background: rgba(0, 0, 0, 0) url("../img/btn_bg.png") repeat-x scroll 0 0;
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    height: 76px;
+    line-height: 68px;
+    margin: 25px auto;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 2px #800;
+    text-transform: uppercase;
+    width: 300px;
+}
+.play_btn::before, .play_btn::after {
+    background: rgba(0, 0, 0, 0) url("../img/btn_corners.png") no-repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 76px;
+    position: absolute;
+    top: 0;
+    width: 13px;
+}
+.play_btn::before {
+    left: -13px;
+}
+.play_btn::after {
+    background-position: -13px 0;
+    right: -13px;
+}
+.separator {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0;
+    height: 1px;
+    margin: 0 auto 30px;
+    width: 300px;
+}
+.paysystems_holder {
+    margin-bottom: 15px;
+}
+.paysystems_holder span {
+    background: rgba(0, 0, 0, 0) url("../img/sprite.png") no-repeat scroll 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.paysystems_holder.top span {
+    margin-right: 40px;
+}
+.paysystems_holder.bottom span {
+    margin-right: 30px;
+}
+.paysystems_holder span:last-child {
+    margin: 0;
+}
+.paysystems_holder .wm {
+    height: 32px;
+    width: 120px;
+}
+.paysystems_holder .yd {
+    background-position: -130px 0;
+    height: 38px;
+    width: 145px;
+}
+.paysystems_holder .w1 {
+    background-position: -79px -83px;
+    height: 45px;
+    width: 50px;
+}
+.paysystems_holder .vs {
+    background-position: -150px -83px;
+    height: 28px;
+    width: 80px;
+}
+.paysystems_holder .mc {
+    background-position: 0 -88px;
+    height: 32px;
+    width: 52px;
+}
+.paysystems_holder .qw {
+    background-position: 0 -38px;
+    height: 42px;
+    width: 125px;
+}
+.play_btn_vr {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fe0000, #a80000) repeat scroll 0 0;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2) inset, 0 3px 0 #600, 0 5px 3px rgba(0, 0, 0, 0.75);
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+    height: 76px;
+    line-height: 76px;
+    margin: 25px auto;
+    padding: 0 40px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.26);
+    text-transform: uppercase;
+    z-index: 1;
+}
+.play_btn_vr:hover {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #fe0000, #c10000) repeat scroll 0 0;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) inset, 0 3px 0 maroon, 0 5px 3px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 64, 64, 0.5);
+}
